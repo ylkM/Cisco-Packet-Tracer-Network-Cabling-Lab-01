@@ -93,7 +93,7 @@ Because Auto MDI-X is disabled, switch-to-switch connections require crossover c
 
 ---
 
-# MDI / MDI-X Cheat Sheet
+## MDI / MDI-X Cheat Sheet
 
 The traditional rule used in this lab is:
 
@@ -175,7 +175,7 @@ Switch ↔ Switch = Crossover
 
 when Auto MDI-X is disabled.
 
-## 2. Check the interfaces
+### 2. Check the interfaces
 
 On a router:
 
