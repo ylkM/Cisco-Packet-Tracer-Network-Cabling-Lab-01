@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the physical cabling of routers and switches network using Cisco Packet Tracer.
+## This project demonstrates the physical cabling of routers and switches network using Cisco Packet Tracer.
 
 The main objective is to demonstrate an understanding of:
 
@@ -17,11 +17,11 @@ The main objective is to demonstrate an understanding of:
 * Switch-to-end-device connections
 * Physical link distances and appropriate media selection
 
-## For this exercise, Auto MDI-X is assumed to be disabled or unsupported**. Therefore, traditional MDI/MDI-X cabling rules are used.
+For this exercise, Auto MDI-X is assumed to be disabled or unsupported. Therefore, traditional MDI/MDI-X cabling rules are used.
 
-# Cabling Plan
+## Cabling Plan
 
-## 1. Router-to-Router Connections
+### 1. Router-to-Router Connections
 
 | Connection | Interfaces                | Distance | Cable            | Reason                                |
 | ---------- | ------------------------- | -------: | ---------------- | ------------------------------------- |
@@ -35,7 +35,7 @@ Both ends are router Ethernet interfaces.
 
 The R1–R2 connection uses a copper crossover cable.
 
-## 2. Router-to-Switch Connections
+### 2. Router-to-Switch Connections
 
 | Connection | Interfaces               | Cable            | Reason      |
 | ---------- | ------------------------ | ---------------- | ----------- |
@@ -45,7 +45,7 @@ The R1–R2 connection uses a copper crossover cable.
 | R4 ↔ SW6   | R4 Fa2/0 ↔ SW6 Fa0/1 | Straight-through | MDI ↔ MDI-X |
 
 
-## 3. Switch-to-Switch Connections
+### 3. Switch-to-Switch Connections
 
 Because Auto MDI-X is disabled, switch-to-switch connections require crossover cables.
 
@@ -59,7 +59,7 @@ Because Auto MDI-X is disabled, switch-to-switch connections require crossover c
 | SW6 ↔ SW8  | Fa0/1 ↔ Fa0/1 | Crossover | MDI-X ↔ MDI-X |
 
 
-## 4. Switch-to-End-Device Connections
+### 4. Switch-to-End-Device Connections
 
 | Connection | Cable            | Reason      |
 | ---------- | ---------------- | ----------- |
@@ -69,7 +69,7 @@ Because Auto MDI-X is disabled, switch-to-switch connections require crossover c
 | SW8 ↔ SRV1 | Straight-through | MDI-X ↔ MDI |
 
 
-# Complete Cable Summary
+## Complete Cable Summary
 
 |  # | Connection                | Cable                       |
 | -: | ------------------------- | --------------------------- |
@@ -120,7 +120,7 @@ Server ↔ Switch       → Straight-through
 
 ---
 
-# Why Auto MDI-X Matters
+## Why Auto MDI-X Matters
 
 Modern Ethernet devices commonly support Auto MDI-X.
 
@@ -138,7 +138,7 @@ This makes the exercise useful for understanding what happens at the physical Et
 
 ---
 
-# Fiber Connections
+## Fiber Connections
 
 Two long-distance router connections use fiber:
 
@@ -159,11 +159,11 @@ Packet Tracer does not differentiate between single-mode and multimode fiber for
 
 ---
 
-# Troubleshooting
+## Troubleshooting
 
 If a link is down, I would troubleshoot it in this order:
 
-## 1. Check the physical cable
+### 1. Check the physical cable
 
 Confirm that the cable matches the device types.
 
@@ -190,7 +190,7 @@ configure terminal
 interface <interface>
 no shutdown
 
-## 3. Check the switch interface
+### 3. Check the switch interface
 
 Use:
 
@@ -200,11 +200,11 @@ or:
 
 show ip interface brief
 
-## 4. Check the correct ports
+### 4. Check the correct ports
 
 Make sure the cable is connected to the interfaces specified by the topology.
 
-## 5. Check the physical layer before troubleshooting IP configuration
+### 5. Check the physical layer before troubleshooting IP configuration
 
 A useful troubleshooting sequence is:
 
@@ -222,7 +222,7 @@ Routing
 
 ---
 
-# What I Learned
+## What I Learned
 
 This topology demonstrates that choosing a cable is not simply about whether a switch is an access switch or a core switch.
 
