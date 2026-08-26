@@ -19,27 +19,6 @@ The main objective is to demonstrate an understanding of:
 
 ## For this exercise, Auto MDI-X is assumed to be disabled or unsupported**. Therefore, traditional MDI/MDI-X cabling rules are used.
 
-## Topology
-
-The network consists of four routers, eight switches, three PCs, and one server.
-                              R1
-                         /          \
-                Crossover            Fiber
-                   50 m              3 km
-                     /                  \
-                   R2                    R3
-                  /  \                    \
-                 /    \                   \ Fiber
-              SW1     SW2                  \ 250 m
-              |        |                     R4
-              |        |                    /  \
-             SW3      SW4                  /    \
-              |        |                  SW5   SW6
-              |        |                   |     |
-             PC1      PC2                  SW7   SW8
-                                           |     |
-                                          PC3   SRV1
-
 # Cabling Plan
 
 ## 1. Router-to-Router Connections
@@ -261,17 +240,6 @@ For this lab, because Auto MDI-X is disabled:
 
 This distinction helped me understand the relationship between MDI, MDI-X, transmit/receive pairs, and Ethernet cable selection**.
 
-
-# Project Files
-
-packet-tracer-cabling-lab/
-│
-├── README.md
-├── topology/
-│   └── network-topology.png
-│
-└── packet-tracer/
-    └── cabling-lab.pkt
 
 ## Skills Demonstrated
 
